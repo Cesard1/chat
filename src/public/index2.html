@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="shortcut icon" type="image/x.icon" href="cha.jpg">
+	<title>文化交流</title>
+
+
+	<!-- JavaScript Bundle with Popper -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+	<!-- CSS only -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+
+</head>
+<body>
+	<header>
+	</header>
+<section>
+	<nav class="navbar	navbar-ligth bg-warning">
+		<a class="navbar-brand mx-auto" href="">文化交流チャット
+		</a>
+	</nav>
+	<div class="card col md-4 mt-5 mx-auto" id="contentlogin">
+	<div class="card-header">
+		<h3>ユーザ名を入力してください：</h3>
+	</div>
+	<p id="loginError"></p>
+	<div class="card-body">
+		<form id="loginform">
+			<input type="text" id="usuario" class="form-control">
+			<button type="submit" class="btn btn-warning mt-2">登録するために</button>
+		</form>
+	  </div>
+  	</div>
+	<div class="container" id="contenedor">
+		<div class="row">
+		<div class="col md-6 offset-md-1 mt-4">
+			<div class="card">
+				<div class="card-header">
+					<h4>チャットしよう</h4>
+				</div>
+				<div id="cuerpoChat" class="card-body"></div>
+				<form id="formulario-mensajes" class="card-footer">
+					<div class="input-group">
+						<input type="text" id="mensaje" class="form-control">
+						<div class="input-group-append">
+							<button type="submit" class="btn btn-warning">送信</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="card col -md-3">
+			<div class="card-header">
+				<h3>オンラインユーザー</h3>
+			</div>
+			<div class="card-body">
+				<div id="usuarios">
+
+				</div>
+			</div>
+		</div>
+		</div>
+	</div>
+</section>
+
+
+<footer>
+	
+</footer>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="/socket.io/socket.io.js"></script>
+<script type="text/javascript" src="/js/codigo.js"></script>
+
+</body>
+</html>
